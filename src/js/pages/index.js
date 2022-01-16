@@ -1,0 +1,1 @@
+export { initializeCourses } from "./homepage";
