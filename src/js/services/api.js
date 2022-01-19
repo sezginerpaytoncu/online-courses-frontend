@@ -1,4 +1,4 @@
-const API_URL = 'https://61af63543e2aba0017c49295.mockapi.io/api'
+const API_URL = "https://61af63543e2aba0017c49295.mockapi.io/api";
 
 /**
  * Get All Courses with given parameters
@@ -7,12 +7,12 @@ const API_URL = 'https://61af63543e2aba0017c49295.mockapi.io/api'
  * @returns object that contains Courses
  */
 export const getCourses = (page = 1, size = 12) => {
-    const MUTATED_URL = `${API_URL}/courses?page=${page}&limit=${size}`;
+  const MUTATED_URL = `${API_URL}/courses?page=${page}&limit=${size}`;
 
-    return fetch(MUTATED_URL, {
-        method: "GET"
-    })
-}
+  return fetch(MUTATED_URL, {
+    method: "GET",
+  });
+};
 
 /**
  * Get course by given id
@@ -20,9 +20,9 @@ export const getCourses = (page = 1, size = 12) => {
  * @returns Object that obtained from API
  */
 export const getProductById = (productId) => {
-    const MUTATED_URL = `${API_URL}/courses/${courseId}`;
+  const MUTATED_URL = `${API_URL}/courses/${courseId}`;
 
-    return fetch(MUTATED_URL, {
-        method: "GET"
-    })
-}
+  return fetch(MUTATED_URL, {
+    method: "GET",
+  });
+};
